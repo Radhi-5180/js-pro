@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>change-img</title>
+
+</head>
+<body>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OcOpWa9C6S29Ck6rHL_bskir9ujmyCWPVQ&usqp=CAU" height="300px" width="300px" id="img_ch">
+	<br>
+	<br>
+	<button id="click" onclick="imgchange()">second img</button>
+
+	<script type="text/javascript">
+		var img_change=document.getElementByid("click");
+		var img1=document.getElementByid("img_ch");
+
+		function imgchange(){
+			if(img1.src=="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OcOpWa9C6S29Ck6rHL_bskir9ujmyCWPVQ&usqp=CAU")
+			{
+				img1.src="https://cdn.pixabay.com/photo/2020/04/10/19/52/tulips-5027633__340.png";
+				img_change.innerHTML="first img"
+			}
+			else{
+
+				img1.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OcOpWa9C6S29Ck6rHL_bskir9ujmyCWPVQ&usqp=CAU";
+				img_change.innerHTML="second img"
+
+			}
+		}
+	</script>
+</body>
+</html>
